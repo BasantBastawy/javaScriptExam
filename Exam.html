@@ -1,0 +1,370 @@
+
+<html>
+<head>
+	<title>Exam</title>
+	<script src="jquery.min.js" ></script>
+	<style type="text/css">
+	#exam{
+			width: 80%;
+			background-color: #ffffff;
+			border-radius: 2em;
+
+		 }
+	#main{
+			margin-top: 50px;
+			width:950px;
+			margin: 20px;
+			margin-left: 100px;
+			background-color: #FFE6C2;
+			border-radius: 5em;
+			padding-left: 50px;
+			height: 400px;
+			padding-top: 40px;
+
+		}
+#button	input{ 
+			background-color: gray;
+			font-size: 15px;
+			color:pink;
+			margin-top: 50px;
+			margin-left: 20px;
+			margin-bottom: 50px;
+			}
+	#skiparray{ 
+		float: right;
+		margin-top: -500px;
+		
+		border-radius: 2.5em;
+		width:200px;
+		height:300px;
+		font-size: 20px;
+		font-weight: bold;
+		color:red;
+		background-color: #000000;
+		right:0px;
+		top:70px;
+		text-align: center;
+		padding-top: 20px;
+
+
+	}
+	</style>
+	
+</head>
+<body>
+<script type="text/javascript">
+	var strIQ='{"Exam":{"Desc":"IQ Exam","time":"15 minutes","Questions":[{"QuestionBody":"1.Look at this series: 2, 4, 6, 8, 10, . . . What numbershould come next?","Answers":["a. 11","b. 12","c. 13","d. 14"],"CorrectAnswers":"b"},{"QuestionBody":"2. Look at this series: 58, 52, 46, 40, 34, . . . What number should come next?","Answers":["a. 26","b. 28","c. 30","d. 32"],"CorrectAnswers":"b"},{"QuestionBody":"3. Look at this series: 40, 40, 47, 47, 54, . . . What number should come next?","Answers":["a. 40","b. 44","c. 54","d. 61"],"CorrectAnswers":"c"},{"QuestionBody":"4. Look at this series: 544, 509, 474, 439, . . . What number should come next?","Answers":["a. 404","b. 414","c. 420","d. 445"],"CorrectAnswers":"a"},{"QuestionBody":"5. Look at this series: 201, 202, 204, 207, . . . What number should come next?","Answers":["a. 205","b. 208","c. 210","d. 211"],"CorrectAnswers":"d"},{"QuestionBody":"6. Look at this series: 8, 22, 8, 28, 8, . . . What number should come next?","Answers":["a. 9","b. 29","c. 32","d. 34"],"CorrectAnswers":"d"},{"QuestionBody":"7. Look at this series: 80, 10, 70, 15, 60, . . . What number should come next?","Answers":["a. 20","b. 25","c. 30","d. 50"],"CorrectAnswers":"a"},{"QuestionBody":"8. Look at this series: 36, 34, 30, 28, 24, . . . What number should come next?","Answers":["a. 20","b. 22","c. 23","d. 26"],"CorrectAnswers":"b"},{"QuestionBody":"9. Look at this series: 22, 21, 23, 22, 24, 23, . . . What number should come next?","Answers":["a. 22","b. 24","c. 25","d. 26"],"CorrectAnswers":"c"},{"QuestionBody":"10. Look at this series: 3, 4, 7, 8, 11, 12, . . . What number should come next?","Answers":["a. 7","b. 10","c. 14","d. 15"],"CorrectAnswers":"d"},{"QuestionBody":"11. Look at this series: 31, 29, 24, 22, 17, . . . What number should come next?","Answers":["a. 15","b. 14","c. 13","d. 12"],"CorrectAnswers":"a"},{"QuestionBody":"12. Look at this series: 21, 9, 21, 11, 21, 13, . . .What number should come next?","Answers":["a. 14","b. 15","c. 21","d. 23"],"CorrectAnswers":"c"},{"QuestionBody":"13. Look at this series: 53, 53, 40, 40, 27, 27, . . .What number should come next?","Answers":["a. 12","b. 14","c. 27","d. 53"],"CorrectAnswers":"b"},{"QuestionBody":"14. Look at this series: 2, 6, 18, 54, . . . What number should come next?","Answers":["a. 108","b. 148","c. 162","d. 216"],"CorrectAnswers":"c"},{"QuestionBody":"15. Look at this series: 1,000, 200, 40, . . . What number should come next?","Answers":["a. 8","b. 10","c. 15","d. 20"],"CorrectAnswers":"a"},{"QuestionBody":"16. Look at this series: 7, 10, 8, 11, 9, 12, . . . What number should come next?","Answers":["a. 7","b. 10","c. 12","d. 13"],"CorrectAnswers":"b"},{"QuestionBody":"17. Look at this series: 14, 28, 20, 40, 32, 64, . . .What number should come next?","Answers":["a. 52","b. 56","c. 96","d. 128"],"CorrectAnswers":"b"},{"QuestionBody":"18. Look at this series: 1.5, 2.3, 3.1, 3.9, . . . What number should come next?","Answers":["a. 4.2","b. 4.4","c. 4.7","d. 5.1"],"CorrectAnswers":"c"},{"QuestionBody":"19. Look at this series: 5.2, 4.8, 4.4, 4, . . . What number should come next?","Answers":["a. 3","b. 3.3","c. 3.5","d. 3.6"],"CorrectAnswers":"d"},{"QuestionBody":"20. 84 78 72 66 60 54 48","Answers":["a. 44 34","b. 42 36","c. 42 32","d. 40 34","e. 38 32"],"CorrectAnswers":"b"},{"QuestionBody":"21.3 8 13 18 23 28 33","Answers":["a. 39 44","b. 38 44","c. 38 43","d. 37 42","e. 33 38"],"CorrectAnswers":"b"},{"QuestionBody":"22. 20 20 17 17 14 14 11","Answers":["a. 8 8","b. 11 11","c. 11 14","d. 8 9","e. 11 8"],"CorrectAnswers":"c"},{"QuestionBody":"23. 18 21 25 18 29 33 18","Answers":["a. 43 18","b. 41 44","c. 37 18","d. 37 41","e. 38 41"],"CorrectAnswers":"e"},{"QuestionBody":"24. 9 11 33 13 15 33 17","Answers":["a. 19 33","b. 33 35","c. 33 19","d. 15 33","e. 19 21"],"CorrectAnswers":"d"},{"QuestionBody":"25. 2 8 14 20 26 32 38","Answers":["a. 2 46","b. 44 50","c. 42 48","d. 40 42","e. 32 26"],"CorrectAnswers":"a"},{"QuestionBody":"26. 28 25 5 21 18 5 14","Answers":["a. 11 5","b. 10","c. 11 8","d. 5 10","e. 10 5"],"CorrectAnswers":"b"},{"QuestionBody":"27. 9 12 11 14 13 16 15","Answers":["a. 14 13","b. 18 21","c. 14 17","d. 12 13","e. 18 17"],"CorrectAnswers":"a"},{"QuestionBody":"28. 75 65 85 55 45 85 35","Answers":["a. 25 15","b. 25 85","c. 35 25","d. 85 35","e. 25 75"],"CorrectAnswers":"e"},{"QuestionBody":"29. 1 10 7 20 13 30 19","Answers":["a. 26 40","b. 29 36","c. 40 25","d. 25 31","e. 40 50"],"CorrectAnswers":"b"},{"QuestionBody":"30. 10 20 25 35 40 50 55","Answers":["a. 70 65","b. 60 70","c. 60 75","d. 60 65","e. 65 70"],"CorrectAnswers":"c"},{"QuestionBody":"31. 40 40 31 31 22 22 13","Answers":["a. 13 4","b. 13 5","c. 4 13","d. 9 4","e. 4 4"],"CorrectAnswers":"e"},{"QuestionBody":"32. 17 17 34 20 20 31 23","Answers":["a. 26 23","b. 34 20","c. 23 33","d. 27 28","e. 23 28"],"CorrectAnswers":"a"},{"QuestionBody":"33. 2 3 4 5 6 4 8","Answers":["a. 9 10","b. 4 8","c. 10 4","d. 9 4","e. 8 9"],"CorrectAnswers":"e"},{"QuestionBody":"34. 61 57 50 61 43 36 61","Answers":["a. 29 61","b. 27 20","c. 31 61","d. 22 15","e. 29 22"],"CorrectAnswers":"d"},{"QuestionBody":"35. 9 16 23 30 37 44 51","Answers":["a. 59 66","b. 56 62","c. 58 66","d. 58 65","e. 54 61"],"CorrectAnswers":"e"},{"QuestionBody":"36. 8 22 12 16 22 20 24","Answers":["a. 28 32","b. 28 22","c. 22 28","d. 32 36","e. 22 26"],"CorrectAnswers":"d"},{"QuestionBody":"37. 6 20 8 14 10 8 12","Answers":["a. 14 10","b. 2 18","c. 4 12","d. 2 14","e. 14 14"],"CorrectAnswers":"c"},{"QuestionBody":"38. 11 16 21 26 31 36 41","Answers":["a. 47 52","b. 46 52","c. 45 49","d. 46 51","e. 46 52"],"CorrectAnswers":"d"},{"QuestionBody":"39. 8 11 21 15 18 21 22","Answers":["a. 25 18","b. 25 21","c. 25 29","d. 24 21","e. 22 26"],"CorrectAnswers":"d"},{"QuestionBody":"40. 44 41 38 35 32 29 26","Answers":["a. 24 21","b. 22 19","c. 23 19","d. 29 32","e. 23 20"],"CorrectAnswers":"b"},{"QuestionBody":"41. 6 10 14 18 22 26 30","Answers":["a. 36 40","b. 33 37","c. 38 42","d. 34 36","e. 34 38"],"CorrectAnswers":"e"},{"QuestionBody":"42. 34 30 26 22 18 14 10","Answers":["a. 8 6","b. 6 4","c. 14 18","d. 6 2","e. 4 0"],"CorrectAnswers":"e"},{"QuestionBody":"43. 2 44 4 41 6 38 8","Answers":["a. 10 12","b. 35 32","c. 34 9","d. 35 10","e. 10 52"],"CorrectAnswers":"d"},{"QuestionBody":"44. 32 29 26 23 20 17 14","Answers":["a. 11 8","b. 12 8","c. 11 7","d. 32 29","e. 10 9"],"CorrectAnswers":"d"},{"QuestionBody":"45. 14 14 26 26 38 38 50","Answers":["a. 60 72","b. 50 62","c. 50 72","d. 62 62","e. 62 80"],"CorrectAnswers":"d"},{"QuestionBody":"46. 8 12 9 13 10 14 11","Answers":["a. 14 11","b. 15 12","c. 8 15","d. 15 19","e. 8 5"],"CorrectAnswers":"b"},{"QuestionBody":"47. 4 7 26 10 13 20 16","Answers":["a. 14 4","b. 14 17","c. 18 14","d. 19 13","e. 19 14"],"CorrectAnswers":"e"},{"QuestionBody":"48. 3 8 10 15 17 22 24","Answers":["a. 26 28","b. 29 34","c. 29 31","d. 26 31","e. 26 32"],"CorrectAnswers":"c"},{"QuestionBody":"49. 17 14 14 11 11 8 8","Answers":["a. 8 5","b. 5 2","c. 8 2","d. 5 5","e. 5 8"],"CorrectAnswers":"d"},{"QuestionBody":"50. 13 29 15 26 17 23 19","Answers":["a. 21 23","b. 20 21","c. 20 17","d. 25 27","e. 22 20"],"CorrectAnswers":"b"}]}}';
+	var strEnglish='{"ExamEnglish":{"Desc":"IQ Exam","time":"15 minutes","Questions":[{"QuestionBody":"1. When can we meet again?","Answers":["1.When are you free?","2.It was two days ago.","3.Can you help me?"],"CorrectAnswers":"1"},{"QuestionBody":"2. My aunt is going to stay with me","Answers":["1)How do you do?","2)How long for?","3)How was it?"],"CorrectAnswers":"2"},{"QuestionBody":"3. When do you study?","Answers":["1)at school","2)in the evenings","3)in the library"],"CorrectAnswers":"2"},{"QuestionBody":"4. Would you prefer lemonade or orange juice?","Answers":["1)Have you got anything else?","2)If you like.","3)Are you sure about that?"],"CorrectAnswers":"1"},{"QuestionBody":"5. Letus have dinner now.","Answers":["1)You arenot eating.","2)There arenot any.","3)Tom isnot here yet"],"CorrectAnswers":"3"},{"QuestionBody":"6. The snow was ...... heavily when I left the house.","Answers":["1)Dropping","2)landing","3)falling","4)descending"],"CorrectAnswers":"3"},{"QuestionBody":"7. I canot find my keys anywhere - I ...... have left them at work.","Answers":["1)can","2)must","3)ought","4)would"],"CorrectAnswers":"2"},{"QuestionBody":"8. When a car pulled out in front of her, Jane did well not to ...... control of her bicycle.","Answers":["1)Miss","2)lose","3)fail","4)drop"],"CorrectAnswers":"2"},{"QuestionBody":"9. According to Richards ...... the train leaves at 7 oclock.","Answers":["1)opinion","2)advice","3)knoeledge","4)information"],"CorrectAnswers":"4"},{"QuestionBody":"10. When you stay in a country for some time you get used to the peoples ...... of life.","Answers":["1)habit","2)custom","3)way","4)system"],"CorrectAnswers":"3"},{"QuestionBody":"11. The builders are ...... good progress with the new house.","Answers":["1)getting","2)doing","3)making","4)taking"],"CorrectAnswers":"3"},{"QuestionBody":"12. She is now taking a more positive ...... to her studies and should do well.","Answers":["1)attitude","2)behavior","3)manner","4)style"],"CorrectAnswers":"1"},{"QuestionBody":"13. My father ...... his new car for two weeks now.","Answers":["1)has had","2)has","3)is having","4)had"],"CorrectAnswers":"1"},{"QuestionBody":"14. What differences are there ...... the English spoken in the UK and the English spoken in the US?","Answers":["1)among","2)between","3)beside","4)with"],"CorrectAnswers":"2"},{"QuestionBody":"15. At 6 p.m. I started to get angry with him because he was late ......","Answers":["1)as usuall","2)in general","3)typically","4)usually"],"CorrectAnswers":"1"},{"QuestionBody":"16. ...... you get your fathers permission, I will take you skiing next weekend.","Answers":["1)although","2)provided","3)as","4)unless"],"CorrectAnswers":"2"},{"QuestionBody":"17. A local company has agreed to ...... the school team with football shirts.","Answers":["1)contribute","2)supply","3)give","4)produce"],"CorrectAnswers":"2"},{"QuestionBody":"18. I really enjoy stories that are ...... in the distant future.","Answers":["1)found","2)set","3)put","4)placed"],"CorrectAnswers":"2"},{"QuestionBody":"19. That old saucepan will come in ...... when we go camping.Convenient","Answers":["1)convenient","2)fitting","3)handy","4)suitable"],"CorrectAnswers":"3"},{"QuestionBody":"20. Anyone ...... after the start of the play is not allowed in until the interval.","Answers":["1)arrives","2)has arrived","3)arriving","4)arrived"],"CorrectAnswers":"3"},{"QuestionBody":"21. I didnot ...... driving home in the storm so I stayed overnight in a hotel.","Answers":["1)fancy","2)desire","3)prefer","4)want"],"CorrectAnswers":"1"},{"QuestionBody":"22. The judge said that those prepared to...... in crime must be ready to suffer the consequences.","Answers":["1)involve","2)engage","3)undertake","4)enlist"],"CorrectAnswers":"2"},{"QuestionBody":"23. Marianne seemed to take ...... at my comments on her work.","Answers":["1)annoyance","2)insult","3)offence","4)indignation"],"CorrectAnswers":"3"},{"QuestionBody":"24. You should not have a dog if you are not ...... to look after it.","Answers":["1)prepared","2)adapted","3)arranged","4)decided"],"CorrectAnswers":"1"},{"QuestionBody":"25. The farmhouse was so isolated that they had to generate their own electricity ......","Answers":["1)current","2)supply","3)grid","4)power"],"CorrectAnswers":"2"}]}}';
+
+	var objIQ= JSON.parse(strIQ);
+	var objEnglish=JSON.parse(strEnglish);
+	var ExamIQ=objIQ.Exam; 
+	var ExamEnglish=objEnglish.ExamEnglish;
+	var RandomIQ,English,IQ;
+	var fbtn,pbtn,lbtn,ebtn,divmain,nbtn,skip,divskip,divresult;
+	var index=0;
+	var iq=[]; // array of Random Iq Question
+	var english=[]; // array of english question
+	var IQAnswers=[]; // array of Iq Answers
+	var EnglishAnswers=[]; 
+	var flagfinish=0;
+	var IQgrades=0; //grades of IQ
+	var Englishgrades=0; //grades of English
+	var SkipQuestion=[];//array of skip IQ Question
+	//var SkipEnglish_Question=[];//array of skip English Question
+	var answers = [];
+	
+	do{
+		 RandomIQ=Math.floor(Math.random()*50);
+		 
+		 var flag=0;
+		 for(i=0;i<iq.length;i++)
+		 {
+		 
+		 	if(iq[i]==ExamIQ.Questions[RandomIQ])
+		 	{
+		 		flag=1;
+		 		break;
+		 	}
+		 }
+                if(flag == 0)
+       		{
+                    iq.push(ExamIQ.Questions[RandomIQ]);
+       		}
+	}while(iq.length<30)
+
+
+
+	do{
+		RandomEnglish=Math.floor(Math.random()*25);
+
+		 var flag=0;
+		 for(i=0;i<english.length;i++)
+		 {
+		 
+		 	if(english[i]==ExamEnglish.Questions[RandomEnglish])
+		 	{
+		 		flag=1;
+		 		break;
+		 	}
+		 }
+                if(flag == 0)
+       		{
+                   english.push(ExamEnglish.Questions[RandomEnglish]);
+       		}
+	}while(english.length<20)
+		
+
+
+			
+
+	function drawQuestion(idx)
+
+		{
+			var HTMLtxt;
+			 var check = " checked='checked'";
+			if(flagfinish==0)//check flag to start iq exam
+			{
+			 IQ=iq[idx];
+                //var check = " checked='checked'"
+             HTMLtxt="<h1> IQ_Exam</h1>";
+			 HTMLtxt+="<h2> Question"+(idx+1)+"</h2>";
+			 HTMLtxt+="<h3>"+IQ.QuestionBody+"</h3>";
+			 HTMLtxt +='<table width="80%">';
+for(var y=0;y<IQ.Answers.length;y++)
+{
+HTMLtxt +='<tr><td><input type="radio" name="answer"'+ eval("if(IQAnswers[idx]==y)check;") +' value="'+y+'"/><span>'+IQ.Answers[y]+'</span></td>';
+}
+
+			HTMLtxt +='</table>';
+			divmain.innerHTML=HTMLtxt;
+			}
+			else
+			{
+				English=english[idx];
+	            HTMLtxt="<h1> English_Exam</h1>";   
+				HTMLtxt+="<h2> Question"+(idx+1)+"</h2>";
+				HTMLtxt +="<h3>"+English.QuestionBody+"</h3>";
+				HTMLtxt +='<table width="80%">';
+				for(var y=0;y<English.Answers.length;y++)
+				{
+					HTMLtxt +='<tr><td><input type="radio" name="answer"'+ eval("if(EnglishAnswers[idx]==y)check;") +' value="'+y+'"/><span>'+English.Answers[y]+'</span></td>';
+				}
+
+				HTMLtxt +='</table>';
+				divmain.innerHTML=HTMLtxt;
+			}
+
+		}
+
+
+			function saveanswer(index){
+				y=$(":radio:checked").val();
+				if(flagfinish==0)
+				{
+				if(!y)
+				{
+					IQAnswers[index]=-1;
+				}
+				else
+				{
+					IQAnswers[index]=y;
+				}
+				}
+				else
+				 {
+						if(!y)
+				{
+			EnglishAnswers[index]=-1;
+			//SkipEnglish_Question
+				}
+				else{
+			EnglishAnswers[index]=y;
+				}
+					EnglishAnswers[index]=y;
+					}
+			}
+
+			function drawskip(index)
+			{
+				var HTMLtxt;
+				
+				HTMLtxt='<a href="#" onclick="drawQuestion('+SkipQuestion[index]+')">Q.'+SkipQuestion[index]+' </a> <br/>';
+			
+				divskip.innerHTML+= HTMLtxt;
+			}
+
+			function result()
+
+			{
+				divresult=document.getElementById("result");
+				var HtmlTxt;
+				if(flagfinish==0)
+				{
+					HTMLtxt=IQgrades;
+				}
+				else
+				{
+					HTMLtxt=Englishgrades;
+				}
+				divresult.innerHTML=HTMLtxt;
+			}	
+			function skipquestion(index)
+			{
+
+				if(flagfinish==0)
+				{
+						 SkipQuestion[index] = index;
+						 drawskip(index);
+						// index++;
+				}
+				else
+				{
+					SkipQuestion[index] = index;
+						 drawskip(index);
+						// index++;
+
+				}
+			}
+		
+	
+	onload=function(){
+		fbtn=document.getElementById("fbtn");
+		fbtn.onclick=function(){
+		$("#pbtn").prop('disabled', true);
+			saveanswer(index);
+			index=0;
+			drawQuestion(index);
+
+		}
+		nbtn=document.getElementById("nbtn");
+		nbtn.onclick=function(){
+			if(flagfinish==0)
+			{
+			saveanswer(index);
+			index ++;
+			if( index==iq.length)
+				{
+					index=0;
+			
+	        	}
+	        }
+	        else if(flagfinish==1)
+	        {
+			saveanswer(index);
+			index ++;
+
+	        if (index==english.length)
+	           {
+	        		index=0;
+	        
+	           }
+	        }	       
+	           drawQuestion(index); 
+		}
+		lbtn=document.getElementById("lbtn");
+		lbtn.onclick=function(){
+		 $("#nbtn").prop('disabled', true);
+			saveanswer(index);
+			if(flagfinish==0)
+			{
+				index=iq.length -1;
+			 	$("#nbtn").prop('disabled', true);
+
+		    }
+		    else
+		    {
+		    		index=english.length -1;
+		   		 	$("#nbtn").prop('disabled', true);
+		    
+		    }
+			drawQuestion(index);
+		}
+		ebtn=document.getElementById("ebtn");
+		ebtn.onclick=function(){
+			if(flagfinish==0)
+			{
+				  for(var w=0;w<IQAnswers.length;w++)
+					{
+						if(iq[w].CorrectAnswers==IQAnswers[w])
+							IQgrades ++;
+					
+					}
+					result();
+					flagfinish=1;
+					drawQuestion(index);
+			}
+			else
+			{
+				  for(var w=0;w<EnglishAnswers.length;w++)
+					{
+						if(english[w].CorrectAnswers==EnglishAnswers[w])
+						Englishgrades ++;
+
+					}
+					result();
+						$("#skip").prop('disabled', true);
+						$("#ebtn").prop('disabled', true);
+						$("#pbtn").prop('disabled', true);
+						$("#nbtn").prop('disabled', true);
+						$("#lbtn").prop('disabled', true);
+						$("#fbtn").prop('disabled', true);
+			}	
+			
+		}
+		pbtn=document.getElementById("pbtn");
+		pbtn.onclick=function(){
+			saveanswer(index);
+			if(flagfinish==0)
+			{
+				index --;
+				if(index<0)
+					index=iq.length-1;
+			}
+			else
+			{
+				index--;
+				if(index<0)
+					index=english.length-1;
+			}
+			drawQuestion(index);
+		}
+		skip=document.getElementById("skip");
+		skip.onclick=function(){
+			skipquestion(index);
+			//drawskip(index);
+			index++;
+			drawQuestion(index);
+
+		}
+
+		divmain=document.getElementById("main");
+		drawQuestion(index);
+		divskip=document.getElementById("skiparray");
+	
+		
+	}
+
+	</script>
+	<div id="exam">
+	<div id="main">
+	</div>
+	<div id="button">
+	<input type="button" value="First" id="fbtn"/>
+	<input type="button" value="prev" id="pbtn"/>
+	<input type="button" value="next" id="nbtn"/>
+	<input type="button" value="last" id="lbtn"/>
+	<input type="button" value="end" id="ebtn"/>
+	<input type="button" value="skipQ" id="skip"/>
+	</div>
+	<div id="skiparray">
+	Skipped_Questions
+
+	</div>
+	<div id="result">
+	Your_Result Is
+	</div>
+	</div>
+
+</body>
+</html>
